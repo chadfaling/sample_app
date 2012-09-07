@@ -9,7 +9,7 @@ gem 'rails', '3.2.8'
 
 # added by chad faling dependicies needed for development
 group :development do
-  gem 'rspec-rails', '2.0.1'
+  gem "rspec-rails", "~> 2.11.0"
   gem 'sqlite3'
 end
 
@@ -18,7 +18,8 @@ group :production do
 end
 
 group :test do 
-  gem 'rspec', '2.0.1'
+  gem "rspec-rails", "~> 2.11.0"
+  gem "rspec", "~> 2.11.0"
   gem 'webrat', '0.7.1'
 end
 # done with gems chad added
