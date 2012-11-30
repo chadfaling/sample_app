@@ -22,7 +22,6 @@ group :test do
   gem "rspec-rails", "~> 2.11.0"
   gem "rspec", "~> 2.11.0"
   gem 'webrat', '0.7.1'
-  gem 'annotate-models'
 end
 # done with gems chad added
 
