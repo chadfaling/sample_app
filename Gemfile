@@ -11,7 +11,7 @@ gem 'rails', '3.2.8'
 group :development do
   gem "rspec-rails", "~> 2.11.0"
   gem 'sqlite3'
-  gem 'annotate-models'
+  gem 'annotate'
 end
 
 group :production do
@@ -22,7 +22,6 @@ group :test do
   gem "rspec-rails", "~> 2.11.0"
   gem "rspec", "~> 2.11.0"
   gem 'webrat', '0.7.1'
-  gem 'annotate-models'
 end
 # done with gems chad added
 
