@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+#gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3' #Chad had to comment out line was causing issue
+gem 'gravatar_image_tag', '0.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -22,6 +24,7 @@ group :test do
   gem "rspec-rails", "~> 2.11.0"
   gem "rspec", "~> 2.11.0"
   gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails', '1.0'
 end
 # done with gems chad added
 
