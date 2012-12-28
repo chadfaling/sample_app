@@ -65,7 +65,7 @@ module SampleApp
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # Chad faling added the below to get app working on heroku
+    # 2012-12-28 Chad faling added the below to get app working on heroku
     config.assets.initialize_on_precompile = false
   end
 end
