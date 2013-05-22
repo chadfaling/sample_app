@@ -223,7 +223,7 @@ describe UsersController do
     describe "success" do
 
       before(:each) do
-        @attr = { :name => "New Name", :email => "user@example.org", :password => "barbaz", :password_confirmation => "barbaz" }
+        @attr = { :name => "New Name", :email => "user@example2.org", :password => "barbaz", :password_confirmation => "barbaz" }
       end
 
       it "should change the user's attributes" do
@@ -282,6 +282,7 @@ describe UsersController do
         response.should redirect_to(root_path)
       end
     end
+  end
 
   describe "DELETE 'destroy'" do
 
@@ -291,7 +292,7 @@ describe UsersController do
 
     describe "as a non-signed-in user" do
       it "should deny access" do
-        delete :destroy, :id => @user
+        delete :destroy, :id=> @user
         response.should redirect_to(signin_path)
       end
     end
@@ -322,6 +323,5 @@ describe UsersController do
         response.should redirect_to(users_path)
       end
     end
-  end
   end
 end
