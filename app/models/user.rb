@@ -41,6 +41,11 @@ class User < ActiveRecord::Base
     return user if user.has_password?(submitted_password)
   end
 
+  def feed
+  # this is preliminary. see chapter 12 for the full implementation.
+  Micropost.where("user_id = ?", id)
+  end
+
 private
 
   def encrypt_password
